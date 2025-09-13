@@ -5,7 +5,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Crown } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -19,7 +19,9 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center space-x-2">
-          <div className="h-8 w-8 rounded bg-gradient-primary"></div>
+          <div className="h-8 w-8 rounded bg-gradient-primary flex items-center justify-center">
+            <Crown className="h-5 w-5 text-primary-foreground" />
+          </div>
           <span className="text-xl font-bold">Content King</span>
         </Link>
 
