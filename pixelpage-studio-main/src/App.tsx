@@ -1,24 +1,27 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index from "./pages/Index";
+import NotFound from "./pages/NotFound";
 
-function App() {
-  return (
-    <Router>
-      <nav style={{ padding: "10px", background: "#f4f4f4" }}>
-        <Link to="/" style={{ marginRight: "10px" }}>Home</Link>
-        <Link to="/about" style={{ marginRight: "10px" }}>About</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
+const queryClient = new QueryClient();
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
-  );
-}
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
 
 export default App;
