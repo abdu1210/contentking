@@ -11,20 +11,20 @@ All colors MUST be HSL.
     --background: 0 0% 0%;
     --foreground: 0 0% 100%;
 
-    --card: 0 0% 25%;
-    --card-foreground: 0 0% 100%;
+    --card: 93 35% 64%;
+    --card-foreground: 0 0% 0%;
 
-    --popover: 0 0% 25%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 93 35% 64%;
+    --popover-foreground: 0 0% 0%;
 
     --primary: 0 0% 35%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 25%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 93 35% 64%;
+    --secondary-foreground: 0 0% 0%;
 
-    --muted: 0 0% 25%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 93 35% 64%;
+    --muted-foreground: 0 0% 20%;
 
     --accent: 0 0% 35%;
     --accent-foreground: 0 0% 100%;
@@ -32,9 +32,9 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 30%;
-    --input: 0 0% 25%;
-    --ring: 0 0% 70%;
+    --border: 93 35% 54%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 10%;
 
     /* Custom design tokens */
     --gradient-primary: linear-gradient(135deg, hsl(0, 0%, 40%) 0%, hsl(0, 0%, 35%) 100%);
@@ -72,20 +72,20 @@ All colors MUST be HSL.
     --background: 0 0% 0%;
     --foreground: 0 0% 100%;
 
-    --card: 0 0% 25%;
-    --card-foreground: 0 0% 100%;
+    --card: 93 35% 64%;
+    --card-foreground: 0 0% 0%;
 
-    --popover: 0 0% 25%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 93 35% 64%;
+    --popover-foreground: 0 0% 0%;
 
     --primary: 0 0% 35%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 25%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 93 35% 64%;
+    --secondary-foreground: 0 0% 0%;
 
-    --muted: 0 0% 25%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 93 35% 64%;
+    --muted-foreground: 0 0% 20%;
 
     --accent: 0 0% 35%;
     --accent-foreground: 0 0% 100%;
@@ -93,9 +93,9 @@ All colors MUST be HSL.
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 30%;
-    --input: 0 0% 25%;
-    --ring: 0 0% 70%;
+    --border: 93 35% 54%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 10%;
 
     --gradient-primary: linear-gradient(135deg, hsl(0, 0%, 40%) 0%, hsl(0, 0%, 35%) 100%);
     --gradient-secondary: linear-gradient(135deg, hsl(0, 0%, 25%) 0%, hsl(0, 0%, 15%) 100%);
