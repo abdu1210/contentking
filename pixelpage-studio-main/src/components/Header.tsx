@@ -88,7 +88,9 @@ const Header = () => {
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="ghost">Sign In</Button>
+          <Button variant="ghost" asChild>
+            <Link to="/signin">Sign In</Link>
+          </Button>
           <Button variant="hero">Start Free Trial</Button>
         </div>
 
@@ -180,7 +182,9 @@ const Header = () => {
               Contact
             </Link>
             <div className="flex flex-col space-y-2 pt-4">
-              <Button variant="ghost">Sign In</Button>
+              <Button variant="ghost" asChild>
+                <Link to="/signin" onClick={() => setIsMenuOpen(false)}>Sign In</Link>
+              </Button>
               <Button variant="hero">Start Free Trial</Button>
             </div>
           </nav>
